@@ -34,7 +34,7 @@ const walletElement = document.querySelector('#wallet');
 const walletLoadingDiv = document.querySelector('#loading_wallet_details');
 const ledgerLoadingDiv = document.querySelector('#loading_ledger_details');
 
-// Connect to the wallet
+// Connect to the wallet,
 connectWalletButton.addEventListener('click', () => {
   window.location.pathname = '/src/assets/connect-wallet/connect-wallet.html';
 });
