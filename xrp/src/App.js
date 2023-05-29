@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import { useState } from 'react';
+import MessageForm from './form/message-form';
 import './App.css';
 import getWalletDetails from './helpers/get-wallet-details';
 import { Client, dropsToXrp, rippleTimeToISOTime } from 'xrpl';
@@ -105,7 +106,7 @@ function App() {
   const [showWallet, setShowWallet] = useState(false);
   return (
     <div className='App'>
-      <header className='App-header'>
+      {/* <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -118,7 +119,8 @@ function App() {
         >
           Welcome to XRP Wallet!
         </a>
-      </header>
+      </header> */}
+      <MessageForm />
     </div>
   );
 }

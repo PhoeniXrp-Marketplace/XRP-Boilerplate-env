@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- -->
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/xrpl.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple XRPL Wallet</title>
+    <link rel="preload" href="./src/assets/send-xrp/send-xrp.html" as="fetch">
+    <link rel="preload" href="./src/assets/transaction-history/transaction-history.html" as="fetch">
+    <link rel="preLoad" href="./src/assets/connect-wallet/connect-wallet.html" as="fetch">
+    <link rel="preload" href="index.css" as="style"> 
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="main_content">
+        <div class="main_logo" id="heading_logo"></div>
+        <div class="links">
+          <button class="send_xrp" id="send_xrp_button">Send XRP</button>
+          <button class="transaction_history" id="transaction_history_button">Transaction History</button>
+          <button class="connect_wallet" id="connect_wallet_button">Connect Wallet</button>
+        </div>
+        <div class="wallet_details" id="wallet">
+            <div class="heading_h3">Account Info:</div>
+            <div id="loading_wallet_details">Loading Wallet Details...</div>
+            <span class="wallet_address"></span>
+            <span class="wallet_balance"></span>
+            <span class="wallet_reserve"></span>
+            <span class="wallet_xaddress"></span>
+            <span class="view_more"><a id="view_more_button">View More</a></span>
+        </div>
+        <div class="ledger_details">
+            <div class="heading_h3">Latest Validated Ledger:</div>
+            <div id="loading_ledger_details">Loading Ledger Details...</div>
+            <span class="ledger_index" id="ledger_index"></span>
+            <span class="ledger_hash" id="ledger_hash"></span>
+            <span class="close_time" id="close_time"></span>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html> -->
