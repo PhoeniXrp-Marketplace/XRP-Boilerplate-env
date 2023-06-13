@@ -1,5 +1,3 @@
 # react-app-xrpls
 
-# Run below command to prompt the localhost server
-
-### npm start
+# Click into the XRP folder and follow instructions to run application
